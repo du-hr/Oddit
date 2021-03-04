@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- stable
+cache:
+  directories:
+  - node_modules
+before_script:
+  - cd frontend
+script:
+- npm install
+- npm test
+# - npm run build
+# deploy:
+#   provider: heroku
+#   app: oddit-frontend
+#   api_key:
+#     secure: Q0IikJtiv7+1EJVe010ghRxwjMjEgRT62G8MCgnjh//FW6hScEyz651YidrDpg3lz86TvYMKIxqMLI8rmpH+k3Qxto8HElXSWy3mTO+7ostduWck3V6bUoU6rBgnhx6PRq73WJ/iv6iRr6szv/12fR/VdeYAcEZSYqkAC+Ps7/E2rcDCCK/pYVrNDmO/1nT/lh+gQRRRBJQpJVwjp0swznH6qtIetWbXsL0YEj6ZlK99wDGKgMHH2up0AmZcZEct7IUNDs8x0FFqV+S63s/zj5QvUvI2nrUK6E4lesj1ce+j2wXA0XYVkLMa8o1OCNmBCx7VH5fDQUZS72ZWlLHzHJifBSdnbfzWgMjQ+MlIocaZDg29rt9TG9EclAPLgqX4MKE2ZUYIbEe8IjMVvP8ufWxRGd9p14Ijj3t/95l3peANyLoiJqSK7JLdGvS8F7XuAWU7siZkJO2SCm68tMPoylLfyhmHgePYgOQKFpV3Z9cXyTM7vZRE8yH9M7UA/wK3uo2bHDmU+2Cad0uJYjd3SWR4cNWvZmbnFXvsrjZcRNQrJXcY/aFx+Q1HJZR/cm6S5awVpNKhGLzYZW1BazvYVx9XW1JtyrsIfBai6qO19hfgOpP4gr/Z3bGE9gCHr0kHW1czInxX0iheYC4LIvVF0Jc2apR0J5K1RPE2/EsRFsM=

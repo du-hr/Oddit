@@ -1,0 +1,23 @@
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 1000px;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even).selectable{background-color: #f2f2f2;}
+
+tr:hover.selectable {background-color: #ddd; cursor: pointer;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f74040;
+  color: white;
+}

@@ -1,0 +1,16 @@
+language: python
+install:
+- pip install pipenv
+- pipenv install
+before_script:
+- cd backend
+script:
+- python manage.py test
+after_script:
+- cd ..
+# deploy:
+#   provider: heroku
+#   api_key:
+#     secure: M1MHDx70KM/0C0wqATjEW5oVrXsRlasDCD+ewSmyIV//jKUquNvpw94e1q46ei8+h7XJalnT6HHO+B1rqffuEeBH6Ng0epA7ux4ygZRcIx0n0i9WmeGNwyHht2lN7wLRAFsTnvASD55T/Tyg+TUqkjPSlCzm+r8M8Gqdl5hpKcEgR8V/BxqFnb3aUQ6QWSf6yeIlnKQXoXVbEHLnzNd9/gP3tmbGpfmW9wmJv6R6GcoOwiaISDopK1+pfXVF07vM9MFZSqUEaE+/E4jrpHyG1V18ClEiz2h+rWEP5MKfsx6fRnikDN0hmCy4kz5hKq/28Wcyt+D8IzdbbzXtnmavWoxxy2OHc5Cx485janUp/oEEL38ByEsdpIC3VeCTDwHTZn0I9JpiTDNCjYpqVyArdxs5AKfpaEWPSU8YMl57Xkc7278mOn+kvP6g6ToAgQOfsgB2P+DZYZSlwAfTiArNiH7fRso19aGudtXDRUyaGIMFJ1WGMNLXKo6G7UjrrLQ34gj/PASNuUjZkJnURk41brp1KSToCyB13kFMthp3jMOvJP4RxDbjj25oWPQKdyp3MfYW8+2nO7YJwblVl05rhuMrk9uyBEzG5F/lRCO8Je7LIW32OQcE8Nu+qUbWBxOl15n9OUUji8idPekp5QGEOP9cfWY4xbs47FDQOCICgf0=
+#   app: oddit-backend
+#   strategy: git
